@@ -7,10 +7,10 @@ public class Bus {
     private String destination;
 
 
-    public Bus(String destination){
+    public Bus(String destination, int capacity){
         this.destination = destination;
         this.passengers = new ArrayList<Passenger>();
-        this.capacity = 15;
+        this.capacity = capacity;
     }
 
     public String getDestination() {
@@ -22,7 +22,12 @@ public class Bus {
     }
 
     public void addPassenger(Passenger passenger) {
-        this.passengers.add(passenger);
+        Passenger passengers[];
+      for (Passenger person : this.passengers){
+          if (Passenger passengers <= capacity){
+              this.passengers(passenger)
+          }
+      }
     }
 
     public int getCapacity() {
